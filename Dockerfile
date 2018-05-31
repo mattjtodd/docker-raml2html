@@ -5,7 +5,7 @@ RUN set -ex \
   && apk upgrade \
   && apk add \
     nodejs-npm \
-  && npm i -g raml2html@7.0.0 \
+  && npm i -g raml2html@7.1.0 \
   && npm cache clean --force \
   && rm -rf /var/cache/apk/*
 
