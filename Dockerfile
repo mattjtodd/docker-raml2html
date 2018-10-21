@@ -3,13 +3,10 @@ FROM alpine:3.8
 ARG VERSION=7.1.0
 
 RUN set -ex \
-  && apk update \
-  && apk upgrade \
-  && apk add \
+  && apk add --no-cache \
     nodejs-npm \
   && npm i -g raml2html@$VERSION \
-  && npm cache clean --force \
-  && rm -rf /var/cache/apk/*
+  && npm cache clean --force
 
 ENTRYPOINT ["raml2html"]
 
