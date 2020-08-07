@@ -1,5 +1,7 @@
 FROM alpine:3.12
 
+LABEL maintainer="Matt Todd <matt.j.todd@gmail.com>"
+
 ARG VERSION=7.6.0
 
 RUN set -ex \
