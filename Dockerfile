@@ -1,6 +1,6 @@
 FROM alpine:3.11
 
-ARG VERSION=7.5.0
+ARG VERSION=7.6.0
 
 RUN set -ex \
   && apk add --no-cache \
@@ -11,3 +11,4 @@ RUN set -ex \
 ENTRYPOINT ["raml2html"]
 
 CMD ["-h"]
+
